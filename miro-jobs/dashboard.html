@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RachCoin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.png" alt="RachCoin Logo" class="w-10 h-10">
+                <a href="index.html" class="text-xl font-bold text-gray-900"><h1>RachCoin Platform</h1></a>
+            </div>
+            <nav class="space-x-4">
+                <a href="explore.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+                <a href="setting.html" class="text-gray-700 hover:text-blue-500">Profile</a>
+            </nav>
+        </header>
+
+        <!-- Main Container -->
+        <div class="flex flex-grow">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="assets/logo.png" alt="Profile Image" class="rounded-full w-24 h-24 mb-4">
+                        <a href="index.html" class="text-lg font-semibold"><h3>RachCoin</h3></a>
+                        <p class="text-sm text-gray-400">info@rachcoin.io</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="dashboard.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Overview</a>
+                        <a href="broadcast-ads.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Broadcast Ads</a>
+                        <a href="farming.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Farming</a>
+                        <a href="inbox.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Inbox</a>
+                        <a href="micro-jobs.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Micro-jobs</a>
+                        <a href="nft.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">NFT</a>
+                        <a href="marketplace.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Nft Market</a>
+                        <a href="stake.html" class="block py-2 px-4 rounded bg-blue-500 hover:bg-blue-400">Stake</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <a href="setting.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Setting</a>
+                    <button class="w-full py-2 px-4 bg-red-600 hover:bg-red-500 rounded">Log out</button>
+                </div>
+            </aside>
+             <!-- Main Content -->
+             <main class="flex-grow p-8">
+                <section class="mb-3">
+                    <div class="bg-indigo-600 text-white text-center py-6 rounded-lg shadow-lg">
+                        <h1 class="text-2xl font-bold">Welcome ${Name}</h1>
+                    </div>
+                    <div class="flex items-center justify-between mb-6">
+                        <input type="text" placeholder="Search for tasks" class="w-1/2 py-2 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <div class="space-x-4">
+                            <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Create Task</button>
+                            <button class="py-2 px-4 bg-gray-200 rounded hover:bg-gray-300">View Tasks</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Task Section -->
+                <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Task List -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold mb-4">New Updates Available</h3>
+                        <ul class="space-y-4">
+                            <li class="border-b border-gray-200 pb-2">
+                                <span class="block text-gray-800 font-bold">Token farming</span>
+                                <p class="text-sm text-gray-600">New task added by system</p>
+                            </li>
+                            <li class="border-b border-gray-200 pb-2">
+                                <span class="block text-gray-800 font-bold">Staking services</span>
+                                <p class="text-sm text-gray-600">Task completed successfully</p>
+                            </li>
+                            <li class="border-b border-gray-200 pb-2">
+                                <span class="block text-gray-800 font-bold">NFT trading opportunities</span>
+                                <p class="text-sm text-gray-600">Task completion confirmed</p>
+                            </li>
+                            <li class="border-b border-gray-200 pb-2">
+                                <span class="block text-gray-800 font-bold">Ad campaign details</span>
+                                <p class="text-sm text-gray-600">Task put on hold by user</p>
+                            </li>
+                            <li>
+                                <span class="block text-gray-800 font-bold">Earned rewards summary</span>
+                                <p class="text-sm text-gray-600">Task marked as done by user</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Task Details -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold mb-4">Token Farming Details</h3>
+                        <ul class="space-y-2 mb-4">
+                            <li><strong>Recipient:</strong> Myself</li>
+                            <li><strong>Due Date:</strong> Now</li>
+                            <li><strong>Ongoing:</strong> Confidential</li>
+                            <li><strong>Urgency Level:</strong> Moderate</li>
+                        </ul>
+                        <div class="mb-4">
+                            <h4 class="font-semibold">Attached Files List</h4>
+                            <button class="py-1 px-3 bg-gray-200 rounded hover:bg-gray-300">Upload</button>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-semibold">Related URLs</h4>
+                            <button class="py-1 px-3 bg-gray-200 rounded hover:bg-gray-300">Include</button>
+                        </div>
+                        <div class="flex space-x-4">
+                            <button class="py-2 px-4 bg-yellow-500 text-white rounded hover:bg-yellow-600">Move to Archive</button>
+                            <button class="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-600">Remove Task</button>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white p-4 text-center">
+            <p>RachCoin Platform - Empowering users with blockchain technology.</p>
+            <nav class="mt-2 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

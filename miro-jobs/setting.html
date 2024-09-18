@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RachCoin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header Section -->
+      <header
+        class="bg-white shadow-md py-4 px-6 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-4">
+          <img src="assets/logo.png" alt="RachCoin Logo" class="w-10 h-10" />
+          <a href="index.html" class="text-xl font-bold text-gray-900"
+            ><h1>RachCoin Platform</h1></a
+          >
+        </div>
+        <nav class="space-x-4">
+          <a href="explore.html" class="text-gray-700 hover:text-blue-500"
+            >Home</a
+          >
+          <a href="dashboard.html" class="text-gray-700 hover:text-blue-500"
+            >Dashboard</a
+          >
+          <a href="setting.html" class="text-gray-700 hover:text-blue-500"
+            >Profile</a
+          >
+        </nav>
+      </header>
+
+      <!-- Main Container -->
+      <div class="flex flex-grow">
+        <!-- Sidebar -->
+        <aside
+          class="w-64 bg-gray-800 text-white p-6 flex flex-col justify-between"
+        >
+          <div>
+            <div class="flex flex-col items-center mb-6">
+              <img
+                src="assets/logo.png"
+                alt="Profile Image"
+                class="rounded-full w-24 h-24 mb-4"
+              />
+              <a href="index.html" class="text-lg font-semibold"
+                ><h3>RachCoin</h3></a
+              >
+              <p class="text-sm text-gray-400">info@rachcoin.io</p>
+            </div>
+            <nav class="space-y-2">
+              <a
+                href="dashboard.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Overview</a
+              >
+              <a
+                href="broadcast-ads.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Broadcast Ads</a
+              >
+              <a
+                href="farming.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Farming</a
+              >
+              <a
+                href="inbox.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Inbox</a
+              >
+              <a
+                href="micro-jobs.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Micro-jobs</a
+              >
+              <a
+                href="nft.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >NFT</a
+              >
+              <a
+                href="marketplace.html"
+                class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+                >Nft Market</a
+              >
+              <a
+                href="stake.html"
+                class="block py-2 px-4 rounded bg-blue-500 hover:bg-blue-400"
+                >Stake</a
+              >
+            </nav>
+          </div>
+          <div class="space-y-2">
+            <a
+              href="setting.html"
+              class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600"
+              >Setting</a
+            >
+            <button
+              class="w-full py-2 px-4 bg-red-600 hover:bg-red-500 rounded"
+            >
+              Log out
+            </button>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow p-8">
+          <section class="mb-8">
+            <div
+              class="bg-indigo-600 text-white text-center py-6 rounded-lg shadow-lg"
+            >
+              <h1 class="text-4xl font-bold">Settings</h1>
+              <p class="mt-2 text-lg">
+                Manage your account, privacy, and preferences.
+              </p>
+            </div>
+          </section>
+
+          <!-- Settings Form -->
+          <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h2 class="text-2xl font-bold mb-4">Profile Settings</h2>
+
+              <form id="settingsForm">
+                <div class="mb-4">
+                  <label
+                    for="username"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    id="username"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Your username"
+                    value="RachCoinUser"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Your email"
+                    value="info@rachcoin.io"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="name"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Your full name"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="phone"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Your phone number (optional)"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="dob"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Date of Birth</label
+                  >
+                  <input
+                    type="date"
+                    id="dob"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    for="country"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Country</label
+                  >
+                  <input
+                    type="text"
+                    id="country"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Enter your country"
+                  />
+                </div>
+                
+
+                <button
+                  class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition"
+                >
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Update password Section -->
+          <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h2 class="text-2xl font-bold mb-4">Update Password</h2>
+              <form id="updatepasswordForm">
+                <!-- Password -->
+                <div class="mb-4">
+                  <label
+                    for="password"
+                    class="block text-sm font-semibold text-gray-700"
+                    >New Password</label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Enter a new password"
+                  />
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="mb-4">
+                  <label
+                    for="confirmPassword"
+                    class="block text-sm font-semibold text-gray-700"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    class="w-full px-3 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    placeholder="Confirm your new password"
+                  />
+                </div>
+                <!-- Save Button -->
+                <button
+                  class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition"
+                >
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Privacy Settings  -->
+          <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h2 class="text-2xl font-bold mb-4">Privacy Settings</h2>
+              <form id="privacyForm">
+                <div class="mb-4">
+                  <label class="block text-sm font-semibold text-gray-700"
+                    >Profile Visibility</label
+                  >
+                  <label class="inline-flex items-center mt-2">
+                    <input
+                      type="radio"
+                      name="visibility"
+                      value="public"
+                      class="form-radio text-indigo-600"
+                      checked
+                    />
+                    <span class="ml-2">Public</span>
+                  </label>
+                  <label class="inline-flex items-center mt-2">
+                    <input
+                      type="radio"
+                      name="visibility"
+                      value="private"
+                      class="form-radio text-indigo-600"
+                    />
+                    <span class="ml-2">Private</span>
+                  </label>
+                </div>
+                <!-- Save Button -->
+                <button
+                  class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition"
+                >
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Notification Settings -->
+          <section class="mb-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h2 class="text-2xl font-bold mb-4">Notification Settings</h2>
+              <form id="notificationForm">
+                <div class="mb-4">
+                  <label class="block text-sm font-semibold text-gray-700"
+                    >Receive Notifications</label
+                  >
+                  <label class="inline-flex items-center mt-2">
+                    <input
+                      type="checkbox"
+                      class="form-checkbox text-indigo-600"
+                      checked
+                    />
+                    <span class="ml-2">Email Notifications</span>
+                  </label>
+                  <label class="inline-flex items-center mt-2">
+                    <input
+                      type="checkbox"
+                      class="form-checkbox text-indigo-600"
+                    />
+                    <span class="ml-2">SMS Notifications</span>
+                  </label>
+                </div>
+                <!-- Save Button -->
+                <button
+                  class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition"
+                >
+                  Save Changes
+                </button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Account Deletion Section -->
+          <section>
+            <div
+              class="bg-red-100 border border-red-300 rounded-lg shadow-lg p-6"
+            >
+              <h2 class="text-2xl font-bold text-red-600 mb-4">
+                Delete Account
+              </h2>
+              <p class="text-red-600 mb-4">
+                Once you delete your account, there is no going back. Please be
+                certain.
+              </p>
+              <button
+                class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+              >
+                Delete My Account
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white p-4 text-center">
+        <p>RachCoin Platform - Empowering users with blockchain technology.</p>
+        <nav class="mt-2 space-x-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Contact Us</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

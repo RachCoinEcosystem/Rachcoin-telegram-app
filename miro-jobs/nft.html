@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RachCoin Token Farming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.png" alt="RachCoin Logo" class="w-10 h-10">
+                <a href="index.html" class="text-xl font-bold text-gray-900"><h1>RachCoin Platform</h1></a>
+            </div>
+            <nav class="space-x-4">
+                <a href="explore.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+                <a href="setting.html" class="text-gray-700 hover:text-blue-500">Profile</a>
+            </nav>
+        </header>
+
+        <!-- Main Container -->
+        <div class="flex flex-grow">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="assets/logo.png" alt="Profile Image" class="rounded-full w-24 h-24 mb-4">
+                        <a href="index.html" class="text-lg font-semibold"><h3>RachCoin</h3></a>
+                        <p class="text-sm text-gray-400">info@rachcoin.io</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="dashboard.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Overview</a>
+                        <a href="broadcast-ads.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Broadcast Ads</a>
+                        <a href="farming.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Farming</a>
+                        <a href="inbox.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Inbox</a>
+                        <a href="micro-jobs.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Micro-jobs</a>
+                        <a href="nft.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">NFT</a>
+                        <a href="marketplace.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Nft Market</a>
+                        <a href="stake.html" class="block py-2 px-4 rounded bg-blue-500 hover:bg-blue-400">Stake</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <a href="setting.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Setting</a>
+                    <button class="w-full py-2 px-4 bg-red-600 hover:bg-red-500 rounded">Log out</button>
+                </div>
+            </aside>
+             <!-- Main Content -->
+             <main class="flex-grow p-8">
+                <section class="mb-8">
+                    <div class="bg-indigo-600 text-white text-center py-6 rounded-lg shadow-lg">
+                        <h1 class="text-4xl font-bold">NFT Creation</h1>
+                        <p class="mt-2 text-lg">Create NFTs on our platform to earn RachCoins.</p>
+                        </p>
+                    </div>
+                </section>
+                 <!-- NFT Creation Section -->
+                 <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Create Your NFT</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <form>
+                            <div class="mb-4">
+                                <label for="nft-name" class="block text-sm font-medium text-gray-700">NFT Name</label>
+                                <input type="text" id="nft-name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div class="mb-4">
+                                <label for="nft-description" class="block text-sm font-medium text-gray-700">Description</label>
+                                <textarea id="nft-description" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label for="nft-image" class="block text-sm font-medium text-gray-700">Upload Image</label>
+                                <input type="file" id="nft-image" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                            </div>
+                            <div class="mb-4">
+                                <label for="nft-price" class="block text-sm font-medium text-gray-700">Price (in RachCoin)</label>
+                                <input type="number" id="nft-price" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Mint NFT</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Your NFTs Section (List owned NFTs) -->
+                <section class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Your NFTs</h2>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="mb-4">Select the NFT you want to sell from the list of your NFTs:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Example NFT Card (Repeat for each owned NFT) -->
+                            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                                <img src="assets/nft/nft-owned1.png" alt="NFT Image" class="w-full h-32 object-cover rounded-md mb-4">
+                                <h3 class="text-lg font-bold mb-2">Future Car </h3>
+                                <p class="text-gray-600">A futuristic, low-slung sports car with a sleek, aerodynamic design cuts through the water, its wheels seemingly defying gravity. The car's headlights and taillights emit a soft, ethereal glow, contrasting with the dark blue of the ocean.
+
+</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <p class="text-gray-800 font-semibold">Price: 100 RachCoin</p>
+                                    <button class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600">Sell</button>
+                                </div>
+                            </div>
+                            <!-- Repeat for other owned NFTs -->
+                            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                                <img src="assets/nft/nft-owned2.png" alt="NFT Image" class="w-full h-32 object-cover rounded-md mb-4">
+                                <h3 class="text-lg font-bold mb-2">Emerald Eye</h3>
+                                <p class="text-gray-600">A digital entity, born of ones and zeros, manifests itself as a luminous green creature. Its form, a complex algorithm made visible, pulsates with energy within a circuit-like frame.</p>
+                                <div class="flex justify-between items-center mt-4">
+                                    <p class="text-gray-800 font-semibold">Price: 200 RachCoin</p>
+                                    <button class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600">Sell</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- NFT list Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">HOT NFT</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- NFT Card -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <img src="assets/nft/nft-owned3.png" alt="NFT Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">RachCoin Logo</h3>
+                            <p class="text-gray-600 mb-4">We Make it special</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-gray-800 font-semibold">Price: 100 RachCoin</p>
+                                <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy</button>
+                            </div>
+                        </div>
+                        <!-- Repeat for other NFTs in the marketplace -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <img src="assets/nft/nft-owned9.png" alt="NFT Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">RachCoin Game</h3>
+                            <p class="text-gray-600 mb-4">Earn as much as you can no limitation here</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-gray-800 font-semibold">Price: 200 RachCoin</p>
+                                <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white p-4 text-center">
+            <p>RachCoin Platform - Empowering users with blockchain technology.</p>
+            <nav class="mt-2 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

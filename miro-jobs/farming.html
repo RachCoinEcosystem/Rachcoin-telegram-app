@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RachCoin Token Farming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.png" alt="RachCoin Logo" class="w-10 h-10">
+                <a href="index.html" class="text-xl font-bold text-gray-900"><h1>RachCoin Platform</h1></a>
+            </div>
+            <nav class="space-x-4">
+                <a href="explore.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+                <a href="setting.html" class="text-gray-700 hover:text-blue-500">Profile</a>
+            </nav>
+        </header>
+
+        <!-- Main Container -->
+        <div class="flex flex-grow">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="assets/logo.png" alt="Profile Image" class="rounded-full w-24 h-24 mb-4">
+                        <a href="index.html" class="text-lg font-semibold"><h3>RachCoin</h3></a>
+                        <p class="text-sm text-gray-400">info@rachcoin.io</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="dashboard.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Overview</a>
+                        <a href="broadcast-ads.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Broadcast Ads</a>
+                        <a href="farming.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Farming</a>
+                        <a href="inbox.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Inbox</a>
+                        <a href="micro-jobs.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Micro-jobs</a>
+                        <a href="nft.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">NFT</a>
+                        <a href="marketplace.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Nft Market</a>
+                        <a href="stake.html" class="block py-2 px-4 rounded bg-blue-500 hover:bg-blue-400">Stake</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <a href="setting.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Setting</a>
+                    <button class="w-full py-2 px-4 bg-red-600 hover:bg-red-500 rounded">Log out</button>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-grow p-8">
+                <section class="mb-8">
+                    <div class="bg-indigo-600 text-white text-center py-6 rounded-lg shadow-lg">
+                        <h1 class="text-4xl font-bold">Token Farming Pools</h1>
+                        <p class="mt-2 text-lg">Stake your RachCoins to earn rewards in various farming pools. Select a pool to view details, stake tokens, and claim your rewards.</p>
+                        </p>
+                    </div>
+                    <!-- Farming Pool Overview -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Pool Card (Repeat for each pool) -->
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Pool 1: RachCoin - TokenX</h3>
+                            <p class="text-gray-600 mb-2">APR: 12%</p>
+                            <p class="text-gray-600 mb-4">Total Staked: 10,000 RachCoin</p>
+                            <div class="flex justify-between items-center">
+                                <button class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600">Stake</button>
+                                <button class="py-2 px-4 bg-yellow-500 text-white rounded hover:bg-yellow-600">Unstake</button>
+                            </div>
+                        </div>
+
+                        <!-- Repeat for other pools -->
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Pool 2: RachCoin - TokenY</h3>
+                            <p class="text-gray-600 mb-2">APR: 8%</p>
+                            <p class="text-gray-600 mb-4">Total Staked: 5,000 RachCoin</p>
+                            <div class="flex justify-between items-center">
+                                <button class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600">Stake</button>
+                                <button class="py-2 px-4 bg-yellow-500 text-white rounded hover:bg-yellow-600">Unstake</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Pool 3: RachCoin - TokenZ</h3>
+                            <p class="text-gray-600 mb-2">APR: 15%</p>
+                            <p class="text-gray-600 mb-4">Total Staked: 15,000 RachCoin</p>
+                            <div class="flex justify-between items-center">
+                                <button class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600">Stake</button>
+                                <button class="py-2 px-4 bg-yellow-500 text-white rounded hover:bg-yellow-600">Unstake</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Current Farming Progress -->
+                <section class="mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Your Farming Progress</h2>
+                    
+                    <!-- Farming Progress Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white shadow-md rounded-lg">
+                            <thead>
+                                <tr class="bg-gray-200 text-gray-700">
+                                    <th class="px-4 py-2">Pool</th>
+                                    <th class="px-4 py-2">Staked Amount</th>
+                                    <th class="px-4 py-2">Earned Rewards</th>
+                                    <th class="px-4 py-2">APR</th>
+                                    <th class="px-4 py-2">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Example Progress Row -->
+                                <tr>
+                                    <td class="border px-4 py-2">RachCoin - TokenX</td>
+                                    <td class="border px-4 py-2">500 RachCoin</td>
+                                    <td class="border px-4 py-2">50 RachCoin</td>
+                                    <td class="border px-4 py-2">12%</td>
+                                    <td class="border px-4 py-2">
+                                        <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Claim Rewards</button>
+                                    </td>
+                                </tr>
+                                <!-- Repeat for other pools -->
+                                <tr>
+                                    <td class="border px-4 py-2">RachCoin - TokenY</td>
+                                    <td class="border px-4 py-2">200 RachCoin</td>
+                                    <td class="border px-4 py-2">30 RachCoin</td>
+                                    <td class="border px-4 py-2">8%</td>
+                                    <td class="border px-4 py-2">
+                                        <button class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Claim Rewards</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white p-4 text-center">
+            <p>RachCoin Platform - Empowering users with blockchain technology.</p>
+            <nav class="mt-2 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

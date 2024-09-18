@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RachCoin - Explore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="assets/logo.png" alt="RachCoin Logo" class="w-10 h-10">
+                <a href="index.html" class="text-xl font-bold text-gray-900"><h1>RachCoin Platform</h1></a>
+            </div>
+            <nav class="space-x-4">
+                <a href="explore.html" class="text-gray-700 hover:text-blue-500">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-500">Dashboard</a>
+                <a href="setting.html" class="text-gray-700 hover:text-blue-500">Profile</a>
+            </nav>
+        </header>
+
+        <!-- Main Container -->
+        <div class="flex flex-grow">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-gray-800 text-white p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex flex-col items-center mb-6">
+                        <img src="assets/logo.png" alt="Profile Image" class="rounded-full w-24 h-24 mb-4">
+                        <a href="index.html" class="text-lg font-semibold"><h3>RachCoin</h3></a>
+                        <p class="text-sm text-gray-400">info@rachcoin.io</p>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="dashboard.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Overview</a>
+                        <a href="broadcast-ads.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Broadcast Ads</a>
+                        <a href="farming.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Farming</a>
+                        <a href="inbox.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Inbox</a>
+                        <a href="micro-jobs.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Micro-jobs</a>
+                        <a href="nft.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">NFT</a>
+                        <a href="marketplace.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Nft Market</a>
+                        <a href="stake.html" class="block py-2 px-4 rounded bg-blue-500 hover:bg-blue-400">Stake</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <a href="setting.html" class="block py-2 px-4 rounded bg-gray-700 hover:bg-gray-600">Setting</a>
+                    <button class="w-full py-2 px-4 bg-red-600 hover:bg-red-500 rounded">Log out</button>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-grow p-8">
+                <section class="mb-8">
+                    <div class="bg-indigo-600 text-white text-center py-6 rounded-lg shadow-lg">
+                        <h1 class="text-4xl font-bold">Inbox - Pay to Read Messages</h1>
+                        <p class="mt-2 text-lg">Earn RachCoins by reading messages and get rewarded!</p>
+                    </div>
+                </section>
+                
+                <!-- Explore Section -->
+                <section>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Explore RachCoin Features</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Token Farming -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/token-farming.png" alt="Token Farming" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Token Farming</h3>
+                            <p class="text-gray-600">Participate in farming to earn RachCoins by staking your tokens.</p>
+                        </div>
+
+                        <!-- Staking -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/staking.png" alt="Staking" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Staking</h3>
+                            <p class="text-gray-600">Stake your RachCoins to earn rewards and secure the network.</p>
+                        </div>
+
+                        <!-- Micro-Jobs -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/micro-jobs.png" alt="Micro-Jobs" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Micro-Jobs</h3>
+                            <p class="text-gray-600">Complete micro jobs to earn RachCoins for small tasks.</p>
+                        </div>
+
+                        <!-- NFT Creation/Trading -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/nft.png" alt="NFT Creation/Trading" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">NFT Creation/Trading</h3>
+                            <p class="text-gray-600">Create and trade NFTs on our platform to earn RachCoins.</p>
+                        </div>
+
+                        <!-- Advertising - Paid to Read -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/paid-to-read.png" alt="Paid to Read" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Paid to Read</h3>
+                            <p class="text-gray-600">Broadcast your ads to our audience and pay with RachCoins.</p>
+                        </div>
+
+                        <!-- Broadcast Ads -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/broadcast-ads.png" alt="Broadcast Ads" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Broadcast Ads</h3>
+                            <p class="text-gray-600">Create and broadcast your ads to a wide audience using RachCoins.</p>
+                        </div>
+
+                        <!-- Earn RachCoin -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/earn-rachcoin.png" alt="Earn RachCoin" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Earn RachCoin</h3>
+                            <p class="text-gray-600">Earn RachCoins by completing tasks, referrals, and more.</p>
+                        </div>
+
+                        <!-- View Ads -->
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                            <div class="flex items-center justify-center mb-4">
+                                <img src="icons/view-ads.png" alt="View Ads" class="w-16 h-16">
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">View Ads</h3>
+                            <p class="text-gray-600">View ads and earn RachCoins for your attention.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white p-4 text-center">
+            <p>© 2024 RachCoin. All rights reserved.</p>
+            <nav class="mt-2 space-x-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
